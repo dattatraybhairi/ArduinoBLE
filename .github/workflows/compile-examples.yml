@@ -14,9 +14,7 @@ jobs:
        ]
 
    steps:
-     - uses: actions/checkout@v1
-       with:
-         fetch-depth: 1
      - uses: arduino/actions/libraries/compile-examples@master
+     - uses: actions/checkout@v2
        with:
          fqbn: ${{ matrix.fqbn }}
