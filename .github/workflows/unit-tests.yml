@@ -29,7 +29,6 @@ jobs:
         with:
           runtime-paths: |
             - extras/test/build/bin/TEST_TARGET_UUID
-            - extras/test/build/bin/TEST_TARGET_ADVERTISING_DATA
             - extras/test/build/bin/TEST_TARGET_DISC_DEVICE
           coverage-exclude-paths: |
             - '*/extras/test/*'
