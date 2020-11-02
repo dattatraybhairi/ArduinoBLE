@@ -25,9 +25,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - uses: arduino/cpp-test-action@main
+      - uses: per1234/cpp-test-action@0413357304e57df508da768411cdbe625ff0c342
         with:
-          runtime-path: |
+          runtime-paths: |
             - extras/test/build/bin/TEST_TARGET_UUID
             - extras/test/build/bin/TEST_TARGET_DISC_DEVICE
             - extras/test/build/bin/TEST_TARGET_ADVERTISING_DATA
