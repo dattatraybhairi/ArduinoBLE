@@ -27,10 +27,10 @@ jobs:
 
       - uses: arduino/cpp-test-action@main
         with:
-          runtime-path: |
-            - extras/test/build/bin/TEST_TARGET_UUID
-            - extras/test/build/bin/TEST_TARGET_DISC_DEVICE
-            - extras/test/build/bin/TEST_TARGET_ADVERTISING_DATA
+          runtime-path: >-
+            extras/test/build/bin/TEST_TARGET_UUID
+            extras/test/build/bin/TEST_TARGET_DISC_DEVICE
+            extras/test/build/bin/TEST_TARGET_ADVERTISING_DATA
           coverage-exclude-paths: |
             - '*/extras/test/*'
             - '/usr/*'
