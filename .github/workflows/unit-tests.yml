@@ -52,7 +52,7 @@ jobs:
       - name: Upload coverage report to Codecov
         uses: codecov/codecov-action@v1
         with:
-          file: ${{ env.COVERAGE_DATA_PATH }}/coverage1.info, ${{ env.COVERAGE_DATA_PATH }}/coverage2.info, ${{ env.COVERAGE_DATA_PATH }}/coverage3.info
+          files: ${{ env.COVERAGE_DATA_PATH }}/coverage1.info, ${{ env.COVERAGE_DATA_PATH }}/coverage2.info, ${{ env.COVERAGE_DATA_PATH }}/coverage3.info
           fail_ci_if_error: true
 
           
